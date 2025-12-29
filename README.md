@@ -2,7 +2,7 @@
 
 The GNN-AE approach consists of both offline and online phases (i.e., offline.tar.gz and online.tar.gz).  GNN-AE is a graph neural network (GNN)-based anchor embedding approach, which allows exact subgraph matching.
 
-As the data after offline training are large, we have prepared two examples (i.e., the yeast data set and the syn-ws data set) of necessary data after offline training. You can run online processing directly without running offline operations first.
+As the data after offline training is large, we have prepared two examples (i.e., the yeast data set and the syn-ws data set) of the necessary data after offline training. You can run online processing directly without running offline operations first.
 
 ## Running Offline Process
 Download the offline.tar.gz, execute the following commands.
@@ -37,7 +37,7 @@ make
 ```
 
 ## Key Parameters
-The key parameters of offline process are in main.py
+The key parameters of the offline process are in main.py
 
 | name | description | 
 | ----- | --------- |
@@ -46,7 +46,7 @@ The key parameters of offline process are in main.py
 | emb_precision | precision for each dimension in anchor embedding, default 100 |
 | dd_path_modes | anchor path mode, '2' indicates hybrid positive \& negative 1-hop anchor paths, and '3' indicates dual 1-hop anchor path |
 
-The key parameters of online process are in main.cpp
+The key parameters of the online process are in the main.cpp
 
 | name | description | 
 | ----- | --------- |
@@ -55,5 +55,5 @@ The key parameters of online process are in main.cpp
 | path_index_type | index of anchor path mode, '2' indicates hybrid positive \& negative 1-hop anchor paths index, and '3' indicates dual 1-hop anchor path index |
 
 ## Experiment Datasets
-You can run 'utils/generator.py' to get the randomly generated queries, and download the [real](https://github.com/RapidsAtHKUST/SubgraphMatching) datasets and the [synthetic](https://1drv.ms/f/s!An78MY7AdBT2a88v8kIpv7zCn2A?e=HafVfc) datasets.  
+You can run 'utils/generator.py' to get the randomly generated queries, and download the [real](https://github.com/RapidsAtHKUST/SubgraphMatching) datasets and the [synthetic](https://1drv.ms/f/c/0098e169ff45042e/IgCUX8TRKsETSLOVkcSah1qqARmB29GWDwWg4esUY2eaKkQ) datasets.  
 
